@@ -9,6 +9,6 @@ Instrucciones de instalación
 
 3. Es necesario que el usuario root de MySql no este usando encripción SHA para la contraseña, en caso de que sea asi (MySql 8), correr el siguiente script para permitir que la gema mysql2 pueda autenticar correctamente (la contraseña de root pasará a ser root): "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'; FLUSH PRIVILEGES"
 
-4. Para que ruby se conecte a la base de dato es necesario instalar la gema mysql2, para ello  corra el comando "gem install mysql2"
+4. Para que ruby se conecte a la base de datos es necesario instalar la gema mysql2, para ello  corra el comando "gem install mysql2"
 
 5. Para abrir el programa, ejecutar el archivo Mock_Nequi.rb
