@@ -12,7 +12,7 @@ class ApplicationAccesorManager
     raise 'El usuario ya existe' if possible_user.count != 0
     @actual_session.database_accessor.user_queries.create_user(email, first_name, last_name, encrypted_pass)
     @actual_session.database_accessor.account_queries.create_main_account_from_email(email)
-    @actual_session.database_accessor.account_queries.create_mattress_from_email(email)
+    @actual_session.database_accessor.mattress_queries.create_mattress_from_email(email)
   end
 
   def login_new(email, password)
